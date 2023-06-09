@@ -80,7 +80,7 @@ class ViewController: UIViewController {
             let seconds = Int(remainingTime) % 60
             
             let timeString = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
-            remainingTimeLabel.text = timeString
+            remainingTimeLabel.text = "Time Remaining: " + timeString
     }
     
     

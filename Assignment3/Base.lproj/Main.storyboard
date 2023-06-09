@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,30 +13,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T6J-oa-9oA" userLabel="background">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ki4-y2-BU7">
-                                <rect key="frame" x="30" y="74" width="964" height="21"/>
+                                <rect key="frame" x="30" y="109" width="333" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNx-dp-n5B">
-                                <rect key="frame" x="20" y="965" width="1024" height="216"/>
+                                <rect key="frame" x="30" y="457" width="333" height="216"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-rb-K9P" userLabel="timeRemaining">
-                                <rect key="frame" x="30" y="1295.5" width="964" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-rb-K9P" userLabel="timeRemaining">
+                                <rect key="frame" x="30" y="788" width="333" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgn-eF-Bs5">
-                                <rect key="frame" x="30" y="1230.5" width="964" height="35"/>
+                                <rect key="frame" x="30" y="723" width="333" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START/STOP">
                                     <backgroundConfiguration key="background">
@@ -57,13 +58,16 @@
                             <constraint firstItem="T6J-oa-9oA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="9HE-Ik-2Rb"/>
                             <constraint firstItem="T6J-oa-9oA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Fdy-Od-Mu3"/>
                             <constraint firstItem="rgn-eF-Bs5" firstAttribute="top" secondItem="DNx-dp-n5B" secondAttribute="bottom" constant="50" id="IWG-qU-Npj"/>
+                            <constraint firstItem="DNx-dp-n5B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="IkL-VD-oa5"/>
                             <constraint firstAttribute="bottom" secondItem="T6J-oa-9oA" secondAttribute="bottom" id="LXb-Ih-k8i"/>
+                            <constraint firstAttribute="trailing" secondItem="DNx-dp-n5B" secondAttribute="trailing" constant="30" id="RTE-nX-xdA"/>
                             <constraint firstItem="T6J-oa-9oA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tk0-O3-4E1"/>
                             <constraint firstItem="ki4-y2-BU7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Yva-iQ-BDZ"/>
                             <constraint firstItem="a3G-rb-K9P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="k07-tl-nSF"/>
-                            <constraint firstItem="DNx-dp-n5B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="l42-40-AD0"/>
+                            <constraint firstItem="DNx-dp-n5B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="l42-40-AD0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a3G-rb-K9P" secondAttribute="bottom" constant="30" id="o5h-Aw-Ctf"/>
-                            <constraint firstAttribute="trailing" secondItem="DNx-dp-n5B" secondAttribute="trailing" constant="-20" id="q20-VM-WQ5"/>
+                            <constraint firstItem="DNx-dp-n5B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oHV-4k-9Km"/>
+                            <constraint firstAttribute="trailing" secondItem="DNx-dp-n5B" secondAttribute="trailing" constant="30" id="q20-VM-WQ5"/>
                             <constraint firstItem="rgn-eF-Bs5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="qUa-wH-kC3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ki4-y2-BU7" secondAttribute="trailing" constant="30" id="sJC-gG-7gO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a3G-rb-K9P" secondAttribute="trailing" constant="30" id="saA-jC-sCW"/>
